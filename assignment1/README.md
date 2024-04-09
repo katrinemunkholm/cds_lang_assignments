@@ -7,21 +7,21 @@ Tables with lingustic information is saved for each subfolder of the corpus, all
 
 The script does the following:
 
-### Loading Packages:
+#### Loading Packages:
 Imports necessary packages such as os, pandas, spacy, and re.
 
-### Defining Functions:
+#### Defining Functions:
 clean_text(text): Removes HTML tags from the input text.
 processing_text(file_path): Processes the text in a file, extracting linguistic features such as part-of-speech (POS) tags and named entities.
 
-### Main Function:
+#### Main Function:
 Defines paths to input and output directories.
 Iterates through subfolders within the input directory, processing each text file.
 Generates a DataFrame containing linguistic features for each text file.
 Saves the DataFrame as a CSV file in the output directory with the name "{subfolder}_linguistic_information.csv".
 Prints a confirmation message for each folder processed.
 
-### Execution:
+#### Execution:
 Executes the main() function when the script is run directly.
 Performs linguistic analysis on the text data within the subfolders and saves the results as CSV files.
 
