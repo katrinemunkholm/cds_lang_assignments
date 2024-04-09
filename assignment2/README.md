@@ -26,11 +26,11 @@ More information about the dataset as well as a download link can be found [here
 
 ## Requirements
 
-python 3
-pandas
-scikit-learn
-numpy
-matplotlib
+python 3 
+pandas 
+scikit-learn 
+numpy 
+matplotlib 
 joblib
 
 ## Reproduction
