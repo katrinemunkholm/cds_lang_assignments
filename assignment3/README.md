@@ -1,8 +1,8 @@
 # Query Expansion with Word Embeddings
 
-Author: Katrine Munkholm Hygebjerg-Hansen
-Elective: Visual Analytics, Cultural Data Science Spring 2024
-Teacher: Ross Deans Kristensen-McLachlan
+- Author: Katrine Munkholm Hygebjerg-Hansen
+- Elective: Visual Analytics, Cultural Data Science Spring 2024
+- Teacher: Ross Deans Kristensen-McLachlan
 
 ## Description
 
@@ -16,15 +16,32 @@ This script performs query expansion with word embeddings on a corpus of song ly
 - **Percentage Calculation:** It calculates the percentage of songs by a given artist containing words related to the expanded query.
 - **Results Saving:** The results are saved to a CSV file, with new results appended to the existing file.
 
-## Usage
+## Reproduction
 
+The script assumes the following structure of the repository:
+```
+assignment3/
+│
+├── data/
+│ └── SpotifyMillionSongDataset_exported.csv
+│ 
+├── out/
+│     └── Search_results.csv
+│ 
+├── src/
+│ └── env
+│ └── Lyrics_search.py
+│
+├── requirements.txt
+└── README.md
+```
 
-Install required packages by running the following code in the command line:
+1. Install required packages by running the following code in the command line:
 
 ```pip install -r requirements.txt```
 
 
-To run the script, use the following command:
+2. To run the script, use the following command:
 
 ```bash
 python Lyrics_search.py --artist "Artist Name" --search-term "Search Term"
