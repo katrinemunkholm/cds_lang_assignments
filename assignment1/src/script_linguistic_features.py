@@ -1,7 +1,7 @@
 """
 Assignment 1 - Linguistic Analysis with SpaCy
 Author: Katrine Munkholm Hygebjerg-Hansen
-Elective: Visual Analytics, Cultural Data Science Fall 2024
+Elective: Visual Analytics, Cultural Data Science Spring 2024
 Teacher: Ross Deans Kristensen-McLachlan
 
 """
