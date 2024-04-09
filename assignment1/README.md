@@ -88,3 +88,17 @@ Information about relative frequency of nouns, verbs, adjectives and adverbs are
 
 
 
+
+project_root/
+│
+├── src/
+│   └── script.py               # Main script for document classification
+│
+├── data/
+│   └── Tobacco3482/            # Directory containing image data
+│
+├── out/
+│   └── classification_report.txt  # Classification report saved here
+│   └── training_curves.png     # Plot of training curves
+│
+└── README.md                   # README file explaining the project and usage
