@@ -44,7 +44,7 @@ More info as well as the download link can be accessed [here.](https://ota.bodle
 
 
 1. The script assumes the following structure of the repository:
-
+```
 assignment1/
 │
 ├── in/
@@ -65,7 +65,8 @@ assignment1/
 │ └── script_linguistic_features.csv.py
 │
 ├── requirements.txt
-└── README.md
+└── README.m`
+```
 
 2. Install required packages by running the following code in the command line:
 
@@ -87,18 +88,3 @@ The data after processing is stored as CSV files within the `out` directory. In 
 Information about relative frequency of nouns, verbs, adjectives and adverbs are stored as well as number of unique PER(persons), LOC(locations) and ORG(organizations) entities.
 
 
-
-
-project_root/
-│
-├── src/
-│   └── script.py               # Main script for document classification
-│
-├── data/
-│   └── Tobacco3482/            # Directory containing image data
-│
-├── out/
-│   └── classification_report.txt  # Classification report saved here
-│   └── training_curves.png     # Plot of training curves
-│
-└── README.md                   # README file explaining the project and usage
