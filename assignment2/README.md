@@ -1,29 +1,86 @@
 # Assignment 2 - Text classification benchmarks
 
-This assignment is about using ```scikit-learn``` to train simple (binary) classification models on text data. For this assignment, we'll continue to use the Fake News Dataset that we've been working on in class.
+## Description
 
-For this exercise, you should write *two different notebooks*. One script should train a logistic regression classifier on the data; the second notebook should train a neural network on the same dataset. Both notebooks should do the following:
+This repository contains Python scripts for text classification benchmarks using scikit-learn. The purpose of these scripts is to train simple (binary) classification models on text data from the Fake News Dataset. The repository includes two separate scripts:
 
-- Save the classification report to a text file the folder called ```out```
-- Save the trained models and vectorizers to the folder called ```models```
+#### Logistic Regression Classifier:
+- Trains a logistic regression classifier on the Fake News Dataset.
+- Performs train-test split and vectorizes text data.
+- Saves the classification report to a text file in the `out` folder.
+- Saves the trained logistic regression classifier and vectorizer to the `models` folder.
 
-## Objective
+#### MLP Classifier:
+- Trains a Multi-Layer Perceptron (MLP) classifier on the same Fake News Dataset.
+- Performs train-test split and vectorizes text data.
+- Saves the classification report to a text file in the `out` folder.
+- Saves the trained MLP classifier and vectorizer to the `models` folder.
 
-This assignment is designed to test that you can:
 
-1. Train simple benchmark machine learning classifiers on structured text data;
-2. Produce understandable outputs and trained models which can be reused;
-3. Save those results in a clear way which can be shared or used for future analysis
+## Data
 
-## Some notes
+The dataset, 'Fake or real news', is used for this analysis. 
+It is a data set containing news articles along with the binary information of whether they are real or fake.
+More information about the dataset as well as a download link can be found [here.](https://github.com/lutzhamel/fake-news/blob/master/README.md)
 
-- Saving the classification report to a text file can be a little tricky. You will need to Google this part!
-- You might want to challenge yourself to create a third script which vectorizes the data separately, and saves the new feature extracted dataset. That way, you only have to vectorize the data once in total, instead of once per script. Performance boost!
 
-## Additional comments
+## Requirements
 
-Your code should include functions that you have written wherever possible. Try to break your code down into smaller self-contained parts, rather than having it as one long set of instructions.
+python 3
+pandas
+scikit-learn
+numpy
+matplotlib
+joblib
 
-For this assignment, you are welcome to submit your code either as a Jupyter Notebook, or as ```.py``` script. If you do not know how to write ```.py``` scripts, don't worry - we're working towards that!
+## Reproduction
 
-Lastly, you are welcome to edit this README file to contain whatever information you like. Remember - documentation is important.
+1. The script assumes the following structure of the repository:
+```
+assignment2/
+│
+├── data/
+│  └── fake_or_real_news.csv
+│
+├── models/
+│  
+├── out/
+│
+├── src/
+│ └── utils
+│ └── Log_Reg_Classifier.py
+│ └── MLP_Classifier.py
+│
+├── requirements.txt
+└── README.md
+```
+
+2. Install required packages by running the following code in the command line:
+
+```pip install -r requirements.txt```
+
+3. Run the scripts by executing:
+
+``` python Log_Reg_Classifier.py ```
+
+and / or
+
+``` python MLP_Classifier.py ```
+
+## Output and results
+
+Upon running the provided scripts, the following outputs will be generated:
+
+#### Classification Report: 
+A textual summary of the performance of the classifiers, detailing metrics such as precision, recall, and F1-score for each class.
+The reports offer insights into the performance of the trained classifiers. A comparative analysis of the classification reports shows that the logistic regression classifier outperforms the designed MLP, achieving an F1-score of 0.91, whereas the MLP attains a score of 0.83. 
+The MLP could potentially be improved by fine tuning parameters and number of hidden layers. 
+
+#### Trained Models: 
+The trained logistic regression classifier (for the logistic regression script) or the MLP classifier (for the MLP script), saved as a .joblib file.
+
+#### Vectorizers:
+The vectorizer used to transform the text data into numerical features, saved as a .joblib file.
+
+These outputs are saved in designated folders (out for the classification report and models for the trained models and vectorizers). 
+

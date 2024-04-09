@@ -1,4 +1,3 @@
-
 """
 Assignment 2 - Text classification benchmarks 
 # Author: Katrine Munkholm Hygebjerg-Hansen
@@ -73,17 +72,17 @@ def save_results(out_folder, models_folder, classifier_report, classifier, vecto
     models_folder (str): Path to the folder to save the trained models and vectorizers.
     classifier_report (str): Classification report as a string.
     classifier (MLPClassifier): Trained MLP classifier.
-    vectorizer (TfidfVectorizer): Trained TF-IDF vectorizer.
+    vectorizer (TfidfVectorizer): Trained vectorizer.
     """
     if not os.path.exists(out_folder):
         os.makedirs(out_folder)
-    with open(os.path.join(out_folder, "classification_report.txt"), "w") as report_file:
+    with open(os.path.join(out_folder, "MLP_classification_report.txt"), "w") as report_file:
         report_file.write(classifier_report)
     
     if not os.path.exists(models_folder):
         os.makedirs(models_folder)
     dump(classifier, os.path.join(models_folder, "MLP_classifier.joblib"))
-    dump(vectorizer, os.path.join(models_folder, "tfidf_vectorizer.joblib"))
+    dump(vectorizer, os.path.join(models_folder, "tfid_vectorizer.joblib"))
 
 # Defining main() to perform task from functions
 def main():
@@ -114,7 +113,7 @@ def main():
     # Save results
     save_results(out_folder, models_folder, classifier_report, classifier, vectorizer)
 
-    print("Classification report saved to 'out/classification_report.txt'")
+    print("Classification report saved to 'out/MLP_classification_report.txt'")
     print("Trained models and vectorizers saved to 'models' folder")
 
 # Run main()

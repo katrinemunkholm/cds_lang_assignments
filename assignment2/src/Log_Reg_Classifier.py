@@ -71,7 +71,7 @@ def save_results(out_folder, models_folder, classifier_report, classifier, vecto
     """
     if not os.path.exists(out_folder):
         os.makedirs(out_folder)
-    with open(os.path.join(out_folder, "classification_report.txt"), "w") as report_file:
+    with open(os.path.join(out_folder, "LogReg_classification_report.txt"), "w") as report_file:
         report_file.write(classifier_report)
     
     if not os.path.exists(models_folder):
@@ -109,7 +109,7 @@ def main():
     # Save results
     save_results(out_folder, models_folder, classifier_report, classifier, vectorizer)
 
-    print("Classification report saved to 'out' folder")
+    print("Classification report saved to 'out' folder as LogReg_classification_report.txt")
     print("Trained models and vectorizers saved to 'models' folder")
 
 # Run main()
