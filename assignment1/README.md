@@ -65,7 +65,7 @@ assignment1/
 │ └── script_linguistic_features.csv.py
 │
 ├── requirements.txt
-└── README.m`
+└── README.md
 ```
 
 2. Install required packages by running the following code in the command line:
