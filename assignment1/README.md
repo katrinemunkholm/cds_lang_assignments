@@ -1,5 +1,9 @@
 # Linguistic Feature Extraction using spaCy
 
+- Author: Katrine Munkholm Hygebjerg-Hansen
+- Elective: Visual Analytics, Cultural Data Science Spring 2024
+- Teacher: Ross Deans Kristensen-McLachlan
+
 ## Description
 
 The script "script_linguistic_features.py" performs linguistic analysis on text files using SpaCy. The USECorpus is analyzed for this project. 

@@ -1,5 +1,9 @@
 # Assignment 2 - Text classification benchmarks
 
+- Author: Katrine Munkholm Hygebjerg-Hansen
+- Elective: Visual Analytics, Cultural Data Science Spring 2024
+- Teacher: Ross Deans Kristensen-McLachlan
+
 ## Description
 
 This repository contains Python scripts for text classification benchmarks using scikit-learn. The purpose of these scripts is to train simple (binary) classification models on text data from the Fake News Dataset. The repository includes two separate scripts:
