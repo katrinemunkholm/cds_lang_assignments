@@ -108,7 +108,7 @@ def main():
     args = parser.parse_args()
 
     # Load the song lyric data
-    data = load_lyric_data("../data/Spotify Million Song Dataset_exported.csv")
+    data = load_lyric_data("../in/Spotify Million Song Dataset_exported.csv")
 
     # Load the word embedding model
     model = api.load("glove-wiki-gigaword-50")
